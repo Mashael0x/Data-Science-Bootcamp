@@ -1,2 +1,2 @@
-# Data-Science-Bootcamp---Coding-Dojo
-Here I will share my weekend projects.
+# Data-Science-Bootcamp
+Here I will share my weekend projects during coding dojo bootcamp
