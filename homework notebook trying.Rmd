@@ -1,0 +1,48 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+#3.2.4 Exercises
+
+```{r}
+library(ggplot2)
+
+df <- mpg
+```
+
+
+#Run ggplot(data = mpg). What do you see?
+
+```{r}
+ggplot(mpg)
+
+#nothing appear
+```
+
+#How many rows are in mpg? How many columns?
+```{r}
+df
+#234 * 11
+```
+
+#What does the drv variable describe? Read the help for ?mpg to find out.
+```{r}
+?mpg
+
+#the typee of drive train:
+
+#f = front-weel drive
+#r = rear wheel drive
+#4 = 4wd
+```
+
+#Make a scatterplot of hwy vs cyl.
+```{r}
+
+ggplot(df)+
+  geom_point(mapping = aes(x = cyl, y = hwy))
+
+
+```
+
