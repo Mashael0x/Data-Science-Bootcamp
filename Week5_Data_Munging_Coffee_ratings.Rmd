@@ -1,0 +1,161 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(lubridate)
+```
+
+
+
+
+this dataset is from TidyTuesday github repository: https://github.com/rfordatascience/tidytuesday
+
+# 1.Data cleaning
+
+```{r}
+coffee_ratings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv')
+
+```
+
+check if there is null data
+
+```{r}
+sum(is.na(coffee_ratings))
+```
+
+fixing date columns
+change grading date and expiration to mdy format
+
+```{r}
+coffee_ratings <- coffee_ratings %>%
+  mutate(grading_date = mdy(grading_date),
+            expiration = mdy(expiration))
+
+```
+
+
+fixing some columns with unknown value
+
+```{r}
+
+coffee_ratings <- coffee_ratings %>%
+  replace_na(list(owner = "Unknown", farm_name = "Unknown", mill = "Unknown", processing_method = "Washed / Wet"))
+
+
+
+```
+
+
+
+```{r}
+sum(is.na(coffee_ratings$lot_number))
+sum(is.na(coffee_ratings$altitude))
+
+coffee_ratings %>%
+  count(lot_number, sort = TRUE)
+
+coffee_ratings %>%
+  count(altitude, sort = TRUE)
+
+
+coffee_ratings <- coffee_ratings %>%
+                  select(-c(lot_number,altitude))
+
+```
+
+filling NA for altitude_low_meters ,altitude_high_meters ,altitude_mean_meters
+
+```{r}
+coffee_ratings %>%
+  ggplot(mapping = aes(x = altitude_low_meters))+
+  geom_histogram(binwidth = 5000)
+
+```
+```{r}
+coffee_ratings %>%
+                  summarise(altitude_low_median = median(altitude_low_meters, na.rm = TRUE))
+
+
+coffee_ratings <- coffee_ratings %>% replace_na(list(altitude_low_meters = 1310.64))
+
+
+```
+
+```{r}
+coffee_ratings %>%
+  ggplot(mapping = aes(x = altitude_high_meters))+
+  geom_histogram(binwidth = 5000)
+
+```
+
+```{r}
+coffee_ratings %>%
+                  summarise(altitude_high_median = median(altitude_high_meters, na.rm = TRUE))
+
+coffee_ratings <- coffee_ratings %>% replace_na(list(altitude_high_meters = 1350))
+
+
+```
+
+```{r}
+
+coffee_ratings %>%
+  ggplot(mapping = aes(x = altitude_mean_meters))+
+  geom_histogram(binwidth = 5000)
+
+```
+
+# this column is the mean of two columns (altitude_high and altitude_low)
+```{r}
+mean.high.low <- (1310.64	+ 1350)/2
+
+coffee_ratings <- coffee_ratings %>% replace_na(list(altitude_mean_meters = mean.high.low))
+
+
+```
+
+
+```{r}
+sum(is.null(coffee_ratings)) # zero
+```
+
+# 2. Exploratory Data Analysis
+
+
+
+```{r}
+coffee_ratings %>%
+  ggplot(aes(country_of_origin)) + geom_bar() + theme(axis.text.x = element_text(angle = 90))
+```
+
+
+
+```{r}
+coffee_ratings %>%
+  ggplot(aes(processing_method)) + geom_bar() + theme(axis.text.x = element_text(angle = 90))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
