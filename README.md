@@ -13,6 +13,9 @@
 ## Week 3: Tableau
    in this project we build a story in Tableau using any dataset.
    we used [Yellow Taxi data](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page), you can find the story [here](https://public.tableau.com/profile/mashael.al.saeed#!/vizhome/Taxi_Weekend_Project/Story1)   
+   
+   
+   ![image](https://github.com/Mashael0x/Data-Science-Bootcamp/blob/main/Screenshot%20(1042).png)
     
     
 
