@@ -34,5 +34,16 @@
       2.tidyr
       3.ggplot2
       4.lubridate
+## Week 6: R-Shiny Web app
+    ......
 
+## Week 7: python-monte carlo simulation
+    .......
+
+## Week8: python-Exploratory Data Analysis (EDA)
+   in this project we choose dataset and do EDA to undrestand it.
+   the default data is Titanic dataset, we did EDA in titanic dataset and another dataset which is [Palmer Penguins](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-07-28) .
+   ### tools:
+       1.pandas
+       2.seaborn
 
