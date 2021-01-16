@@ -38,7 +38,7 @@
     ......
 
 ## Week 7: python-monte carlo simulation
-    .......
+   build a Monte carlo simulation for a birthday problem using python.
 
 ## Week8: python-Exploratory Data Analysis (EDA)
    in this project we choose dataset and do EDA to undrestand it.
