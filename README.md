@@ -35,7 +35,9 @@
       3.ggplot2
       4.lubridate
 ## Week 6: R-Shiny Web app
-    ......
+  in this project we build a [shiny web app](https://shiny.rstudio.com/) to display our visulaizations and analysis in a nice reactive and simple web page. 
+  I build a simple shiny app using [Plamer Penguins](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-07-28) dataset.
+  ![](https://github.com/Mashael0x/Data-Science-Bootcamp/blob/main/PneguinsShinyApp.gif)
 
 ## Week 7: python-monte carlo simulation
    build a Monte carlo simulation for a birthday problem using python.
