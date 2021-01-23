@@ -19,14 +19,14 @@
     
     
 
-## Week 4: R-simulation
+## Week 4: R - simulation
    we build a movie theater simulation using R and Rstudio.
    ### tools:
      1. base R
      2. Graphics
      3. plotrix
 
-## Week 5: R-Data Munging
+## Week 5: R - Data Munging
    clean data and visualize it using Tidyverse package.
    I choosed [Coffee_Ratings](https://github.com/rfordatascience/tidytuesday) Data from #TidyTuesday repository.
    ### tools:
@@ -34,18 +34,21 @@
       2.tidyr
       3.ggplot2
       4.lubridate
-## Week 6: R-Shiny Web app
+## Week 6: R - Shiny Web app
   in this project we build a [shiny web app](https://shiny.rstudio.com/) to display our visulaizations and analysis in a nice reactive and simple web page. 
   I build a simple shiny app using [Plamer Penguins](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-07-28) dataset.
   ![](https://github.com/Mashael0x/Data-Science-Bootcamp/blob/main/PneguinsShinyApp.gif)
 
-## Week 7: python-monte carlo simulation
+## Week 7: python - monte carlo simulation
    build a Monte carlo simulation for a birthday problem using python.
 
-## Week8: python-Exploratory Data Analysis (EDA)
+## Week 8: python - Exploratory Data Analysis (EDA)
    in this project we choose dataset and do EDA to undrestand it.
    the default data is Titanic dataset, we did EDA in titanic dataset and another dataset which is [Palmer Penguins](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-07-28) .
    ### tools:
        1.pandas
        2.seaborn
-
+## Week 9: python - Plotly App
+  the goal of this project is to build plotly app to display visualizations in interactive way.
+  we used titanic dataset to build the App.
+  
