@@ -50,5 +50,6 @@
        2.seaborn
 ## Week 9: python - Plotly App
   the goal of this project is to build plotly app to display visualizations in interactive way.
+  
   we used titanic dataset to build the App.
    ![image](https://github.com/Mashael0x/Data-Science-Bootcamp/blob/main/Screenshot%20(1071).png)
