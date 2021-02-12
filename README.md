@@ -53,3 +53,13 @@
   
   we used titanic dataset to build the App.
    ![image](https://github.com/Mashael0x/Data-Science-Bootcamp/blob/main/plotly.png)
+   
+## Week 10:
+   
+
+
+## Week 11:
+
+
+
+## Week 12:
