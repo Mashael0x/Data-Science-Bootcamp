@@ -54,12 +54,17 @@
   we used titanic dataset to build the App.
    ![image](https://github.com/Mashael0x/Data-Science-Bootcamp/blob/main/plotly.png)
    
-## Week 10:
-   
+## Week 10: Machine Learning project 1
+   in this project our goal is to identify and predict customer retention using EDA and logistic regression.
+   ### tools:
+      1.pandas
+      2.seaborn
+      3.sklearn
 
-
-## Week 11:
-
-
-
-## Week 12:
+## Week 11: Machine learning project 2
+   I used Mushroom dataset and do Exploraotry Data Analysis and modeling, since the data was clean there is no need to preprocess it.
+   ### tools:
+      1.pandas
+      2.seaborn
+      3.sklearn
+## Week 12: Machine learning project 3
