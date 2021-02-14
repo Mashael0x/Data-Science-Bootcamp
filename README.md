@@ -68,3 +68,11 @@
       2.seaborn
       3.sklearn
 ## Week 12: Machine learning project 3
+   this week project was participating in ongiong kaggle challenge called [Tabular Playground series](https://www.kaggle.com/c/tabular-playground-series-feb-2021). and this me
+   and my team [notebook](https://www.kaggle.com/naddah/label-encoder).
+   ## tools:
+      1.cuml
+      2.cudf
+      3.pandas
+      4.numpy
+      5.matplotlib & seaborn
